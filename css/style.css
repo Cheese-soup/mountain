@@ -1,0 +1,342 @@
+@font-face {
+    font-weight: 700;
+    font-family: "Chronicle";
+    src: url(../fonts/Chronicle\ Display\ Bold.ttf);
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: "Chronicle";
+    src: url(../fonts/Chronicle\ Display\ Semibold.ttf);
+}
+
+@font-face {
+    font-weight: 00;
+    font-family: "Chronicle";
+    src: url(../fonts/Chronicle\ Display\ Black.ttf);
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-weight: 800;
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-ExtraBold.ttf);
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1760px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #FFFFFF;
+    background: url(../images/hero/5.png) 50% 100% no-repeat,
+    url(../images/hero/4.png) 50% 80% no-repeat,
+    url(../images/hero/3.png) 50% 100% no-repeat,
+    url(../images/hero/2.png) 50% 0% no-repeat,
+    url(../images/hero/1.png) 50% 0% no-repeat;
+    background-size: auto;
+    height: 1900px;
+    background-color: #0B1D26;
+
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-family: "Chronicle", 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+a {
+    transition: 0.3s linear;
+}
+
+a:hover {
+    color: #FBD784;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    align-items: center;
+    margin-bottom: 198px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 40px;
+}
+
+.account__link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 17px;
+}
+
+.account a:hover > svg path, svg:hover path {
+    fill: #FBD784;
+    color: #FBD784;
+    transition: fill .3s ease;
+}
+
+.hero__inner {
+    display: flex;
+    gap: 400px;
+    align-items: center;
+    margin-bottom: 840px;
+}
+
+.hero__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -30px;
+    gap: 24px;
+}
+
+.hero__socials p {
+    transform: rotate(90deg);
+    margin-bottom: 30px;
+}
+
+.hero__content {
+    max-width: 950px;
+}
+
+.hero__content-subtitle, .step-one__content-subtitle, .step-two__content-subtitle, .step-three__content-subtitle {
+    color: #FBD784;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 32px;
+
+}
+
+.hero__content-subtitle::before, .step-one__content-subtitle::before, .step-two__content-subtitle::before, .step-three__content-subtitle::before {
+    content: " ";
+    position: absolute;
+    background-image: url(../images/rectangle.svg);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 2px;
+    left: 0;
+    top: 8px;
+}
+
+.hero__content-title {
+    text-transform: capitalize;
+    font-size: 88px;
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+
+.hero__content-link {
+    position: relative;
+    padding-right: 30px;
+}
+
+.hero__content-link::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 24px;
+    right: 0;
+    top: 1px;
+}
+
+.scrollbar {
+    width: 77px;
+    height: 240px;
+    position: fixed;  
+    right: 75px;
+}
+
+
+.scrollbar__list {
+    text-align: right;
+}
+
+.scrollbar__list li {
+    line-height: 1.2;
+    padding-bottom: 40px;
+}
+
+.scrollbar__item {
+}
+
+.scrollbar__link {
+}
+
+
+.container-step {
+    max-width: 1430px;
+}
+
+#scrolldown, #step-1, #step-2 {
+    display: block;
+    margin-top: -80px;
+    padding-top: 80px;
+}
+
+#step-3 {
+    display: block;
+    margin-top: 1px;
+    padding-top: 1px;
+}
+
+.step-one__inner, .step-two__inner, .step-three__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-three__inner {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.step-one__content, .step-two__content, .step-three__content {
+    flex-basis: 620px;
+    padding-top: 140px;
+}
+
+.step-one__content-title, .step-two__content-title, .step-three__content-title {
+    font-size: 64px;
+    line-height: 1.2;
+    max-width: 555px;
+    padding-bottom: 27px;
+    position: relative;
+}
+
+.step-one__content-title::before, .step-two__content-title::before, .step-three__content-title::before {
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    content: "01";
+    font-size: 240px;
+    left: -150px;
+    top: -185px;
+    color: rgb(255, 255, 255, 0.1);
+}
+
+.step-two__content-title::before {
+    content: "02";
+}
+
+.step-three__content-title::before {
+    content: "03";
+}
+
+.step-one__content-text, .step-two__content-text, .step-three__content-text {
+    padding-bottom: 27px;
+}
+
+.step-one__content-link {
+    position: relative;
+    color: #FBD784;
+}
+
+.step-one__content-link::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 100px;
+    top: 4px;
+}
+
+.step-two {
+    margin-top: -265px;
+    padding-top: 450px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content {
+    flex-basis: 347px;
+}
+
+.footer__text {
+    max-width: 303px;
+    padding-top: 24px;
+    margin-bottom: 122px;
+}
+
+.footer__copyright {
+    font-weight: 500;
+    padding-bottom: 105px;
+}
+
+.footer__items {
+    display: flex;
+    gap: 212px;
+}
+
+.footer__item-title {
+    color: #FBD784;
+    padding-bottom: 24px;
+    font-size: 24px;
+}
+
+.footer__item-list {
+    font-weight: 500;
+}
+
+.footer__item-list li {
+    padding-bottom: 16px;
+}
+
